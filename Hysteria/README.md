@@ -16,6 +16,6 @@ Hysteria 是一个功能丰富的、专为恶劣网络环境进行优化的网�
 
 3）、若 TLS 证书由 acme.sh 客户端提供，可使用 reloadcmd 参数实现 TLS 证书自动更新后就执行重启 Hysteria 来重载更新后的 TLS 证书，详见 acme.sh 客户端说明。（acme.sh专属办法）
 
-4、如内网超过 10G 或高延迟跨国超过 1G，建议增加 [UDP 接收缓冲区大小](https://github.com/HyNetwork/hysteria/wiki/%E4%BC%98%E5%8C%96)对超高传速度进行优化。
+4、若网络极差推荐部署，相比 Xray 或 V2Ray 的 mKCP 应用加速明显。
 
-5、若网络极差推荐部署，相比 Xray 或 V2Ray 的 mKCP 应用加速明显。
+5、若要用 Hysteria 进行高速传输，请[增加系统 UDP 的接收和发送 buffer 大小](https://hysteria.network/zh/docs/optimizations/)。
